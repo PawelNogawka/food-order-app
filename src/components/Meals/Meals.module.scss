@@ -1,0 +1,29 @@
+@import "../../variables";
+
+.meals {
+  padding: 4rem 0;
+  &__heading {
+    margin: 4rem 0;
+    font-size: min(7vw, 3rem);
+    font-weight: 500;
+    color: $dark-text;
+    margin-bottom: 3rem;
+    letter-spacing: 0.05rem;
+    text-align: center;
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .meals {
+    padding: 7rem 0;
+    &__heading {
+      margin-bottom: 7rem;
+    }
+  }
+}

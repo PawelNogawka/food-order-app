@@ -1,0 +1,19 @@
+//colors
+
+$dark-text: #564741;
+$light-text: #958b8a;
+$main: #fa5d43;
+$secondary: #ffbb34;
+
+//gradinet
+
+$main-gradient: linear-gradient(
+  180deg,
+  rgba(0, 0, 0, 0.7) 0%,
+  rgba(0, 0, 0, 0.4) 100%
+);
+
+// shadows
+
+$btn-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+$card-shadow: 1.95px 1.95px 2.6px rgba(0, 0, 0, 0.15);

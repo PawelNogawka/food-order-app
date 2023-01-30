@@ -1,0 +1,48 @@
+@import "../../variables";
+
+.order {
+  padding-right: 1.3rem;
+  padding-left: 0.3em;
+  max-width: 50rem;
+  max-height: 40vh;
+  overflow: auto;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+
+  &__label {
+    color: $dark-text;
+  }
+  &__input {
+    padding: 0.8rem;
+    border-radius: 2rem;
+    border: 0.1rem solid #ccc;
+  }
+
+  &__order-buttons {
+    margin-top: 2rem;
+    margin-bottom: 0.4rem;
+    display: flex;
+    gap: 1rem;
+  }
+  &__error{
+    font-size: 1.3rem;
+    color:$main;
+  }
+}
+
+
+@media(min-width:768px){
+  .order{
+    max-height: 50vh;
+  }
+}

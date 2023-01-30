@@ -1,0 +1,65 @@
+@import "../../variables";
+
+.home {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-image: $main-gradient, url("../../assets/home-small.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__banner {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    max-width: 67rem;
+  }
+
+  &__heading {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    font-size: min(7rem, 9vw);
+    color: #fff;
+  }
+
+  &__subtitle {
+    margin-bottom: 1rem;
+    color: #fff;
+    line-height: 180%;
+  }
+
+  &__arrow-btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 3rem;
+    width: 4rem;
+    height: 4rem;
+    overflow: hidden;
+    cursor: pointer;
+    svg {
+      color: #fff;
+      font-size: 2.2rem;
+      transform: translateY(-3rem);
+      animation: arrow 1.9s infinite linear;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .home {
+    background-image: $main-gradient, url("../../assets/home-big.jpg");
+  }
+}
+
+@keyframes arrow {
+  100% {
+    transform: translateY(9rem);
+  }
+}

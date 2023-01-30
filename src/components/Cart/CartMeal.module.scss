@@ -1,0 +1,55 @@
+@import "../../variables";
+
+.meal {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+  &__name {
+    font-size: 1.6rem;
+    letter-spacing: 0.05rem;
+    color: $dark-text;
+    text-transform: capitalize;
+  }
+  &__amount {
+    border: 0.1rem solid #ccc;
+    min-width: 5rem;
+    border-radius: 1rem;
+    padding: 0.4rem;
+    color: $dark-text;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  &__btns {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 0.1rem solid $main;
+    color: $dark-text;
+    font-size: 1.7rem;
+    text-align: center;
+    border-radius: 1rem;
+  }
+}
+
+@media (max-width: 568px) {
+  .meal {
+    gap: 1rem;
+
+    &__btn {
+      width: 3rem;
+      height: 3rem;
+      font-size: 1.6rem;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding: 7rem;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  background: 0;
+}
+
+input {
+  border: 0;
+  background: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(204, 204, 204, 0.25);
+}
+
+.notify {
+  background-color: red;
+}

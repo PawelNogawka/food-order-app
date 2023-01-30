@@ -1,0 +1,19 @@
+@import "../../variables";
+
+.meal-form {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  &__input {
+    width: 10rem;
+    border-radius: 2rem;
+    border: 0.1rem solid #ccc;
+    padding: 0 0.9rem;
+  }
+  small {
+    position: absolute;
+    left: 0;
+    top: -2rem;
+    color: $main;
+  }
+}

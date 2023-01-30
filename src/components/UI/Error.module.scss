@@ -1,0 +1,14 @@
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+  min-height: 20vh;
+
+  p {
+    color: #f44336;
+    font-size: 2.2rem;
+  }
+}

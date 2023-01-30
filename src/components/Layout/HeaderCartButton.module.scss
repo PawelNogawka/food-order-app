@@ -1,0 +1,45 @@
+@import "../../variables";
+
+.header-cart-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  background-color: $main;
+  border-radius: 2rem;
+  box-shadow: $btn-shadow;
+
+  svg {
+    font-size: 2rem;
+    color: #fff;
+  }
+
+  &__amount {
+    margin-top: -1rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+
+  &__bump {
+    animation: bump 300ms ease-out;
+  }
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

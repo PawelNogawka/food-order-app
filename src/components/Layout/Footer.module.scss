@@ -1,0 +1,16 @@
+@import "../../variables";
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+  background-color: #ccc;
+
+  p {
+    color: $dark-text;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 2rem;
+  }
+}

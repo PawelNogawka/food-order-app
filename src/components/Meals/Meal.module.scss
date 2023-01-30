@@ -1,0 +1,42 @@
+@import "../../variables";
+
+.meal {
+  width: 27rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  box-shadow: $card-shadow;
+  border-radius: 2rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: inherit;
+    height: 15rem;
+  }
+
+  &__name {
+    margin-top: 0.6rem;
+    margin-bottom: 0.4rem;
+    font-size: 1.8rem;
+    color: $dark-text;
+    text-transform: capitalize;
+    letter-spacing: 0.05rem;
+    font-weight: 500;
+  }
+
+  &__rating {
+    margin-bottom: 0.7rem;
+    svg {
+      font-size: 1.6rem;
+      color: $secondary;
+    }
+  }
+
+  &__desc {
+    margin-bottom: 1.9rem;
+    color: $light-text;
+  }
+}

@@ -1,0 +1,55 @@
+@import "../../variables";
+
+.cart__buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+
+
+.cart__meals {
+  display: flex;
+  flex-direction: column;
+  gap: 3.3rem;
+  list-style: none;
+  margin-bottom: 3rem;
+  max-height: 17rem;
+  overflow: auto;
+}
+
+.cart__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart__total-price {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: $main;
+}
+
+.cart__empty {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  letter-spacing: 0.05rem;
+  color: $dark-text;
+}
+
+
+
+
+@media(max-width:568px){
+    .cart__total-price {
+       font-size: 2rem;
+      }
+}
+
+
+@media(min-width:768px){
+  .cart__meals{
+    max-height: 30rem;
+  }
+}
